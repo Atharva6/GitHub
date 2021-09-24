@@ -1,0 +1,61 @@
+Git: Git is a free and open source distributed version control system designed to handle everything from small 
+     to very large projects with speed and efficiency.
+
+There are various commands of git: 
+
+1) git status - Used To show whether it is git repository or not.
+
+2) git init   - Used to add git repository to the folder.
+
+3) git add .   - Used to tracked & staged files.
+   git add --a 
+
+4) git commit -m "Message" - It is used to take snapshot of the staged files.
+
+5) git diff
+   git log -p  - Used to show the difference between previous file & staged file.
+
+6) git restore fileName - Used to restore the files.
+
+7) git log - Used to show all the committed files.
+
+8) git clone (ProjectPath) - to clone any project.
+
+9) git config --global alias.s status - Shortcut for status
+
+// Commands for Viewing log files: a) git log -p -1
+                                   b) git log --stat
+                                   c) git log --pretty=short                 
+                                   d) git log --pretty=full                 
+                                   e) git log --pretty=oneline
+                                   f) git log --since=2.days
+                                   g) git log --pretty=format:"%h -- %an"                 
+                                   i) git log --pretty=format:"%h -- %ae"
+
+// Moving and Renaming Files: i)  git mv oldFile newFile
+                              ii) git rm fileName
+
+// Pushing to GitHub
+
+## Steps =>
+
+1) Create new repository in GitHub
+2) Go the project and open gitbash
+3) After opening gitbash, 
+        run following commands: a) git status
+                                b) git add .
+                                c) git commit -m "Mess"
+                                d) git remote
+                                e) git remote add (randomNameforRepository) (repositoryPath)   
+                                f) git push -u origin master        
+4) Finally, Project will be pushed.
+
+// Creating, Switching & Merging Branches:  
+                                    To Create New Branch: a) git checkout -b 
+
+                                    To Switch to New Branch: a) git checkout (BranchName)
+
+                                    To Merge Branch: a) git merge (BranchName) 
+
+
+                        
